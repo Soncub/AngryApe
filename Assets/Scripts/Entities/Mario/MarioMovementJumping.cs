@@ -56,10 +56,13 @@ public class MarioMovementJumping : StateBehaviour
 
             if (input == 0f && body.velocity.x != 0)
                 body.velocity.x = Mathf.MoveTowards(body.velocity.x, 0, hDecceleration);
-            else if (input > 0)//right
+            /*else if (input > 0)//right
                 body.velocity.x = Mathf.MoveTowards(body.velocity.x, horizontalSpeed, hAcceleration);
             else if (input < 0)//left
-                body.velocity.x = Mathf.MoveTowards(body.velocity.x, -horizontalSpeed, hAcceleration);
+                body.velocity.x = Mathf.MoveTowards(body.velocity.x, -horizontalSpeed, hAcceleration);*/
+            //Removes one if-else statement, usable for either direction.
+            else if (input != 0f)
+                body.velocity.x = Mathf.MoveTowards(body.velocity.x, Mathf.Sign(input) * horizontalSpeed, hAcceleration);
         }
 
         if (jumpPhase == JumpPhase.PreMinHeight && body.position.y >= targetMinHeight) jumpPhase = JumpPhase.PreMaxHeight;

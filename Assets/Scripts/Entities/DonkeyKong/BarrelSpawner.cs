@@ -23,7 +23,9 @@ public class BarrelSpawner : MonoBehaviour
     private void SpawnBarrel()
     {
         PoolableObject barrel = barrels.Pump();
-        barrel.GetComponent<Rigidbody2D>().velocity = Vector2.right * initialVelocity;
+        //barrel.GetComponent<Rigidbody2D>().velocity = Vector2.right * initialVelocity;
+        //Swapped position of float and vector with respect to Orders of Operations Efficieny.
+        barrel.GetComponent<Rigidbody2D>().velocity = initialVelocity * Vector2.right;
         SetTimer();
     }
 }

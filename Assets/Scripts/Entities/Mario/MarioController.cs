@@ -117,7 +117,10 @@ public class MarioController : MonoBehaviour, ISingleton<MarioController>
     {
         paused = !paused;
         Time.timeScale = paused ? 0 : 1;
-        marioStateMachine.enabled = paused ? false : true;
-        pauseIcon.SetActive(paused ? true : false);
+        //marioStateMachine.enabled = paused ? false : true;
+        //pauseIcon.SetActive(paused ? true : false);
+        //Simplified the code for pausing to not involve conditional operator.
+        marioStateMachine.enabled = !paused;
+        pauseIcon.SetActive(paused);
     }
 }

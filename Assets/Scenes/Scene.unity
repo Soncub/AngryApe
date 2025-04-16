@@ -656,8 +656,6 @@ Transform:
   - {fileID: 1156908878}
   - {fileID: 1637188138}
   - {fileID: 248689186}
-  - {fileID: 1411311195}
-  - {fileID: 909713174}
   m_Father: {fileID: 890179137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404435544
@@ -992,7 +990,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 519420032}
-  - {fileID: 619394802}
   - {fileID: 1476509609}
   - {fileID: 444166671}
   - {fileID: 1553709334}
@@ -1011,7 +1008,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   m_Layer: 0
@@ -1021,14 +1017,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,15 +1088,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.15271318
+    x: 0.37692308
     y: 0
-    width: 0.69457364
-    height: 1
+    width: 0.24615386
+    height: 0.99999994
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 16.1875
+  orthographic size: 28.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1460,88 +1448,6 @@ MonoBehaviour:
   topAtPlatform: 1
   bottomAtPlatform: 0
   pixelCount: 21
---- !u!1 &619394800
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 619394802}
-  - component: {fileID: 619394801}
-  m_Layer: 0
-  m_Name: Global Light 2D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &619394801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619394800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ComponentVersion: 1
-  m_LightType: 4
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
---- !u!4 &619394802
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619394800}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 499212736}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &753903028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,95 +1847,6 @@ MonoBehaviour:
   airborneSprite: {fileID: 315399276, guid: 10c072dcb0d73e04bb501ad3f604d267, type: 3}
   climbingSprite: {fileID: 1922648657, guid: 10c072dcb0d73e04bb501ad3f604d267, type: 3}
   deadSprite: {fileID: 547208737, guid: 10c072dcb0d73e04bb501ad3f604d267, type: 3}
---- !u!1 &909713173
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 909713174}
-  - component: {fileID: 909713176}
-  - component: {fileID: 909713175}
-  m_Layer: 3
-  m_Name: HammerJump
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &909713174
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909713173}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 307899849}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &909713175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909713173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 569d642510d36f543afaea0300981408, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalSpeed: 2
-  hAcceleration: 0.25
-  hDecceleration: 0.3
-  jumpPower: 2
-  jumpMinHeight: 0.25
-  jumpMaxHeight: 1.25
-  gravity: 98
-  terminalVelocity: 2
-  fallDeathHeight: 2.8
-  allowTurnWhileJumping: 0
-  allowJumpCancel: 0
-  r_inputHorizontal: {fileID: -776777169138010410, guid: f9a7798ce55d3f943a02b23d8e87d79f, type: 3}
---- !u!114 &909713176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909713173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ca022ce6de62649a33818276bcd72e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  locked: 0
-  onAwakeEvent:
-    _PersistentCalls: []
-  onEnterEvent:
-    _PersistentCalls: []
-  onExitEvent:
-    _PersistentCalls: []
-  onUpdateEvent:
-    _PersistentCalls: []
-  onFixedUpdateEvent:
-    _PersistentCalls: []
-  signals:
-    _serializedList:
-    - Key: Land
-      Value:
-        _PersistentCalls:
-        - _Target: {fileID: 1411311196}
-          _MemberName: Enter
-          _PersistentArguments: []
-  lockReady: 0
 --- !u!1 &915205914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,7 +2049,7 @@ GameObject:
   - component: {fileID: 1057733276}
   m_Layer: 0
   m_Name: BarrelEnd
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2881,112 +2698,6 @@ MonoBehaviour:
   topAtPlatform: 1
   bottomAtPlatform: 0
   pixelCount: 23
---- !u!1 &1411311194
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1411311195}
-  - component: {fileID: 1411311196}
-  - component: {fileID: 1411311197}
-  m_Layer: 3
-  m_Name: HammerTime
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1411311195
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411311194}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 307899849}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1411311196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411311194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ca022ce6de62649a33818276bcd72e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  locked: 0
-  onAwakeEvent:
-    _PersistentCalls: []
-  onEnterEvent:
-    _PersistentCalls: []
-  onExitEvent:
-    _PersistentCalls: []
-  onUpdateEvent:
-    _PersistentCalls: []
-  onFixedUpdateEvent:
-    _PersistentCalls: []
-  signals:
-    _serializedList:
-    - Key: Jump
-      Value:
-        _PersistentCalls:
-        - _Target: {fileID: 909713175}
-          _MemberName: BeginJump
-          _PersistentArguments:
-          - _Type: 4
-            _Int: 0
-            _String: MarioMovementJumping+JumpPhase, Assembly-CSharp, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-            _X: 0
-            _Y: 0
-            _Z: 0
-            _W: 0
-            _Object: {fileID: 0}
-    - Key: WalkOff
-      Value:
-        _PersistentCalls:
-        - _Target: {fileID: 909713175}
-          _MemberName: BeginJump
-          _PersistentArguments:
-          - _Type: 4
-            _Int: 3
-            _String: MarioMovementJumping+JumpPhase, Assembly-CSharp, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-            _X: 0
-            _Y: 0
-            _Z: 0
-            _W: 0
-            _Object: {fileID: 0}
-  lockReady: 0
---- !u!114 &1411311197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411311194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da7b63aeb1e2aa948a4d0f93724ec6c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  acceleration: 0
-  decceleration: 0
-  r_inputHorizontal: {fileID: -776777169138010410, guid: f9a7798ce55d3f943a02b23d8e87d79f, type: 3}
-  jumpState: {fileID: 909713175}
 --- !u!1 &1476509607
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,7 +4306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrels:
     prefabObject: {fileID: 192677742182119477, guid: 5781783155bcf8f46bfc8bbb1efddf7d, type: 3}
-    defaultPoolDepth: 1
+    defaultPoolDepth: 14
     canGrow: 1
     parent: {fileID: 1567578303}
     autoDisableTime: -1
